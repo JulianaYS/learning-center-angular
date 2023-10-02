@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id" : 1,
+      "name": "John Doe",
+      "age": 25,
+      "address": "Nowhere"
+    },
+    {
+      "id" : 2,
+      "name": "Maria Doe",
+      "age": 21,
+      "address": "Nowhere"
+    },
+    {
+      "id" : 3,
+      "name": "Adrian Doe",
+      "age": 20,
+      "address": "Home"
+    }
+  ]
+}
