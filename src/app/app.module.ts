@@ -11,6 +11,11 @@ import { StudentFormComponent } from './learning/components/student-form/student
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
+import {MatIconModule} from "@angular/material/icon";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import {MatButtonModule} from "@angular/material/button";
     HttpClientModule,
     MatInputModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatSortModule,
+    MatIconModule,
+    MatPaginatorModule,
+    MatToolbarModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]
