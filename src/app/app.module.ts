@@ -9,7 +9,7 @@ import { StudentsComponent } from './learning/pages/students/students.component'
 import {StudentsService} from "./learning/services/students.service";
 import { StudentFormComponent } from './learning/components/student-form/student-form.component';
 import {MatInputModule} from "@angular/material/input";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
@@ -19,6 +19,7 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { AboutComponent } from './public/pages/about/about.component';
 import { HomeComponent } from './public/pages/home/home.component';
 import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-found.component';
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -36,12 +37,14 @@ import { PageNotFoundComponent } from './public/pages/page-not-found/page-not-fo
     HttpClientModule,
     MatInputModule,
     FormsModule,
+    ReactiveFormsModule,
     MatButtonModule,
     MatTableModule,
     MatSortModule,
     MatIconModule,
     MatPaginatorModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]
