@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {HttpClientModule} from "@angular/common/http";
 import { StudentsComponent } from './learning/pages/students/students.component';
 import {StudentsService} from "./learning/services/students.service";
+import { StudentFormComponent } from './learning/components/student-form/student-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentsComponent
+    StudentsComponent,
+    StudentFormComponent
   ],
   imports: [
     BrowserModule,
