@@ -8,6 +8,9 @@ import {HttpClientModule} from "@angular/common/http";
 import { StudentsComponent } from './learning/pages/students/students.component';
 import {StudentsService} from "./learning/services/students.service";
 import { StudentFormComponent } from './learning/components/student-form/student-form.component';
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule} from "@angular/forms";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { StudentFormComponent } from './learning/components/student-form/student
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatInputModule,
+    FormsModule,
+    MatButtonModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]
